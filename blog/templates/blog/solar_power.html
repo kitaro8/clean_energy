@@ -1,0 +1,183 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<style type="text/css">
+  html{
+  background-image: url("https://wallpaperaccess.com/full/1663640.jpg");
+  position: relative;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Clean Energy</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'blog-hydropower' %}">Hydropower</a>
+              <a class="nav-item nav-link active" href="{% url 'blog-solar_power' %}">Solar Power</a>
+              <a class="nav-item nav-link" href="{% url 'blog-wind_power' %}">Wind Power</a>
+              <a class="nav-item nav-link" href="{% url 'blog-sources' %}">Sources</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<div class="content" style="margin-top: 200px;">
+
+  <p>
+    <strong style="color: #FFE77AFF; font-size: 30px;">Solar Power</strong><hr><br>
+    <strong style="color: #aef2b1;">Definition:<br><br></strong>
+    Solar power is the conversion of energy from sunlight into electricity, either directly using photovoltaics (PV), indirectly using concentrated solar power, or a combination. Concentrated solar power systems use lenses or mirrors and solar tracking systems to focus a large area of sunlight into a small beam. Photovoltaic cells convert light into an electric current using the photovoltaic effect.
+
+Photovoltaics were initially solely used as a source of electricity for small and medium-sized applications, from the calculator powered by a single solar cell to remote homes powered by an off-grid rooftop PV system. Commercial concentrated solar power plants were first developed in the 1980s. As the cost of solar electricity has fallen, the number of grid-connected solar PV systems has grown into the millions and utility-scale photovoltaic power stations with hundreds of megawatts are being built. Solar PV is rapidly becoming an inexpensive, low-carbon technology to harness renewable energy from the Sun. The current largest photovoltaic power station in the world is the Pavagada Solar Park, Karnataka, India with a generation capacity of 2050 MW.
+  </p>
+<hr><br>
+<p>
+    <strong style="color: #aef2b1;">Pros of Solar Power:<br><br></strong>
+    <span style="color: #a8fff1;"> 1. Renewable Energy Source</span><br>
+    Among all the benefits of solar panels, the most important thing is that solar energy is a truly renewable energy source. It can be harnessed in all areas of the world and is available every day. We cannot run out of solar energy, unlike some of the other sources of energy.
+
+Solar energy will be accessible as long as we have the sun, therefore sunlight will be available to us for at least 5 billion years when according to scientists the sun is going to die.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 2. Reduces Electricity Bills
+</span><br>
+    Since you will be meeting some of your energy needs with the electricity your solar system has generated, your energy bills will drop. How much you save on your bill will be dependent on the size of the solar system and your electricity or heat usage.
+
+For example, if you are a business using commercial solar panels this switch can have huge benefits because the large system size can cover large chunks of your energy bills.
+
+Moreover, not only will you be saving on the electricity bill, but there is also a possibility to receive payments for the surplus energy that you export back to the grid through the Smart Export Guarantee (SEG). If you generate more electricity than you use (considering that your solar panel system is connected to the grid). 
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 3. Diverse Applications
+
+</span><br>
+   Solar energy can be used for diverse purposes. You can generate electricity (photovoltaics) or heat (solar thermal). Solar energy can be used to produce electricity in areas without access to the energy grid, to distil water in regions with limited clean water supplies and to power satellites in space.
+
+Solar energy can also be integrated into the materials used for buildings. Not long ago Sharp introduced transparent solar energy windows.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 4. Low Maintenance Costs
+</span><br>
+    Solar energy systems generally don’t require a lot of maintenance. You only need to keep them relatively clean, so cleaning them a couple of times per year will do the job. If in doubt, you can always rely on specialised cleaning companies, which offer this service from around £25-£35.
+
+Most reliable solar panel manufacturers offer 20-25 years warranty.
+
+Also, as there are no moving parts, there is no wear and tear. The inverter is usually the only part that needs to be changed after 5-10 years because it is continuously working to convert solar energy into electricity and heat (solar PV vs. solar thermal). Apart from the inverter, the cables also need maintenance to ensure your solar power system runs at maximum efficiency.
+
+So, after covering the initial cost of the solar system, you can expect very little spending on maintenance and repair work.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 5. Technology Development
+</span><br>
+    Technology in the solar power industry is constantly advancing and improvements will intensify in the future. Innovations in quantum physics and nanotechnology can potentially increase the effectiveness of solar panels and double, or even triple, the electrical input of the solar power systems.
+</p>
+<hr><br>
+
+<p>
+    <strong style="color: #aef2b1;">Cons of Solar Power:<br><br></strong>
+    <span style="color: #a8fff1;"> 1. Cost
+</span><br>
+    The initial cost of purchasing a solar system is fairly high. This includes paying for solar panels, inverter, batteries, wiring, and the installation. Nevertheless, solar technologies are constantly developing, so it is safe to assume that prices will go down in the future.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 2. Weather-Dependent
+</span><br>
+    Although solar energy can still be collected during cloudy and rainy days, the efficiency of the solar system drops. Solar panels are dependent on sunlight to effectively gather solar energy. Therefore, a few cloudy, rainy days can have a noticeable effect on the energy system. You should also take into account that solar energy cannot be collected during the night.
+
+On the other hand, if you also require your water heating solution to work at night or during wintertime, thermodynamic panels are an alternative to consider.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 3. Solar Energy Storage Is Expensive
+</span><br>
+   Solar energy has to be used right away, or it can be stored in large batteries. These batteries, used in off-the-grid solar systems, can be charged during the day so that the energy is used at night. This is a good solution for using solar energy all day long but it is also quite expensive.
+
+In most cases, it is smarter to just use solar energy during the day and take energy from the grid during the night (you can only do this if your system is connected to the grid). Luckily your energy demand is usually higher during the day so you can meet most of it with solar energy.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 4. Uses a Lot of Space
+</span><br>
+    The more electricity you want to produce, the more solar panels you will need, as you want to collect as much sunlight as possible. Solar PV panels require a lot of space and some roofs are not big enough to fit the number of solar panels that you would like to have.
+
+An alternative is to install some of the panels in your yard but they need to have access to sunlight. If you don’t have the space for all the panels that you wanted, you can opt for installing fewer to still satisfy some of your energy needs.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 5. Associated with Pollution
+</span><br>
+    Although pollution related to solar energy systems is far less compared to other sources of energy, solar energy can be associated with pollution. Transportation and installation of solar systems have been associated with the emission of greenhouse gases.
+
+There are also some toxic materials and hazardous products used during the manufacturing process of solar photovoltaic systems, which can indirectly affect the environment.
+
+Nevertheless, solar energy pollutes far less than other alternative energy sources.
+</p>
+
+<hr><br>
+
+<p>
+    <strong style="color: #aef2b1;">What Do Solar Panels Cost?
+:<br><br></strong>
+    With installation, an average residential 5kW size system costs between $3 and $5 per watt, according to the CSE, which results in the $15,000 to $25,000 range. That cost is before any tax credits and incentives. If you know your current energy usage, you can calculate how much you'll need to pay for solar panels.
+
+</p>
+  
+ 
+<hr><br>
+
+<p>
+    <strong style="color: #aef2b1;">How efficient are solar panels?
+:<br><br></strong>
+     Most solar panels are between 15% and 20% efficient, with outliers on either side of the range. High-quality solar panels can exceed 22% efficiency in some cases (and almost reach 23%!), but the majority of photovoltaic panels available are not above 20% efficiency.
+</p>
+
+
+<p>
+    <strong style="color: #aef2b1;">How Does Solar panels work?
+:<br><br></strong>
+     When the sun shines onto a solar panel, energy from the sunlight is absorbed by the PV cells in the panel. This energy creates electrical charges that move in response to an internal electrical field in the cell, causing electricity to flow.
+</p>
+
+<img src="https://news-media.energysage.com/wp-content/uploads/2019/05/infographic-solar-cells-work.png" class="img-fluid" alt="Responsive image" style="margin-left: 150px">
+<br><br>
+<p>
+    <strong style="color: #aef2b1;">How solar panel efficiency differs by product
+:<br><br></strong>
+     Given the same amount of sunlight shining for the same duration of time on two solar panels with different efficiency ratings, the more efficient panel will produce more electricity than the less efficient panel. Solar panel efficiency is determined by the production of electricity by solar cells, which are in turn influenced by composition, electrical configuration, surrounding components, and more.
+
+In practical terms, for two solar panels of the same physical size, if one has a 21% efficiency rating and the other has a 14% efficiency rating, the 21% efficient panel will produce 50% more kilowatt-hours (kWh) of electricity under the same conditions as the 14% efficient panel. Thus, maximizing energy use and bill savings is heavily reliant on having top-tier solar panel efficiency.
+</p>
+
+<p>
+    <strong style="color: #aef2b1;">Most efficient solar panels: the top 5
+:<br><br></strong>
+     Here are the top five best solar panel manufacturers ranked based on the highest efficiency solar panel they have to offer:
+
+<p>1-SunPower (22.8%)</p>
+<p>2-LG (22.0%)</p>
+<p>3-EC Solar (21.7%)</p>
+<p>4-CSUN (21.2%)</p>
+<p>5-Panasonic (21.2%)</p>
+</p>
+</div>
+{% endblock content %}

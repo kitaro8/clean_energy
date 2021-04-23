@@ -1,0 +1,123 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+
+<style type="text/css">
+  html{
+  background-image: url("https://cdn.hipwallpaper.com/i/32/51/7xbIYS.jpg");
+  position: relative;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Clean Energy</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'blog-hydropower' %}">Hydropower</a>
+              <a class="nav-item nav-link" href="{% url 'blog-solar_power' %}">Solar Power</a>
+              <a class="nav-item nav-link active" href="{% url 'blog-wind_power' %}">Wind Power</a>
+              <a class="nav-item nav-link" href="{% url 'blog-sources' %}">Sources</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<div class="content" style="margin-top: 200px;">
+
+  <p>
+    <strong style="color: #FFE77AFF; font-size: 30px;">Wind Power</strong><hr><br>
+    <strong style="color: #aef2b1;">Definition:<br><br></strong>
+    Wind power or wind energy is the use of wind to provide mechanical power through wind turbines to turn electric generators for electrical power. Wind power is a popular sustainable, renewable source of power that has a much smaller impact on the environment compared to burning fossil fuels.
+
+Wind farms consist of many individual wind turbines, which are connected to the electric power transmission network. Onshore wind is an inexpensive source of electric power, competitive with or in many places cheaper than coal or gas plants. Onshore wind farms have a greater visual impact on the landscape than other power stations, as they need to be spread over more land and need to be built away from dense population. Offshore wind is steadier and stronger than on land and offshore farms have less visual impact, but construction and maintenance costs are significantly higher. Small onshore wind farms can feed some energy into the grid or provide power to isolated off-grid locations.
+  </p>
+
+<img class="img-fluid" alt="Responsive image" style="margin-left: 50px" src="https://www.goodenergy.co.uk/media/18254/energy-generation-large-scale-wind_adobestock_193650175x1280.jpg?width=640&height=">
+<hr><br>
+<p>
+    <strong style="color: #aef2b1;">Pros of wind  Power:<br><br></strong>
+    <span style="color: #a8fff1;"> 1. Wind energy is clean and renewable</span><br>
+    Unlike coal, natural gas, or oil, generating electricity from wind doesn’t result in greenhouse gas emissions. While there are some environmental considerations that come with building large wind farms, once operational, wind turbines themselves don’t require burning any fossil fuels to operate.
+
+Additionally, wind energy is completely renewable and will never run out. In opposition to traditional fossil fuels resources that replenish very slowly, wind naturally occurs in our atmosphere, and we don’t have to worry about supply issues in the future.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 2. Wind energy has low operating costs
+</span><br>
+    As far as upfront costs go, wind farms or individual turbines can be expensive to install. However, once up and running, operating costs are relatively low; their fuel (wind) is free, and the turbines don’t require too much maintenance over the course of their lifetime.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 3. Wind energy is space-efficient
+</span><br>
+   Cumulatively, wind farms can take up a lot of land space; however, the actual turbines and equipment don’t use up a lot of real-estate. This means that land used for wind turbines can often also be used for other purposes, such as farming.
+</p>
+
+<hr><br>
+
+<p>
+    <strong style="color: #aef2b1;">Cons of wind Power:<br><br></strong>
+    <span style="color: #a8fff1;"> 1. Wind energy is intermittent
+</span><br>
+    A wind turbine’s effectiveness in generating electricity depends on the weather; thus, it can be difficult to predict exactly how much electricity a wind turbine will generate over time. If wind speeds are too low on any given day, the turbine’s rotor won’t spin. 
+
+This means wind energy isn’t always available for dispatch in times of peak electricity demand. In order to use wind energy exclusively, wind turbines need to be paired with some sort of energy storage technology.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 2. Wind energy causes noise and visual pollution
+</span><br>
+    One of the biggest downsides of wind energy is the noise and visual pollution. Wind turbines can be noisy when operating, as a result of both the mechanical operation and the wind vortex that’s created when the blades are rotating. Additionally, because wind turbines need to be built up high enough to capture a good amount of wind, the turbines can often interrupt otherwise scenic landscapes, such as mountain ranges, lakes, oceans, and more.
+</p>
+
+<p>
+    <span style="color: #a8fff1;"> 3. Wind turbines have some negative impacts on their surrounding environment
+</span><br>
+   A wind turbine’s blades are very large and rotate at very high speeds. Unfortunately, their blades can harm and kill species that fly into them, like birds and bats. The construction of wind farms can also disrupt natural habitats of local species if not conducted in a sustainable manner. However, these problems can be solved to some extent with technological advancements and properly-siting wind farms.
+</p>
+
+<hr><br>
+
+<p>
+    <strong style="color: #aef2b1;">How much do wind turbines cost?
+:<br><br></strong>
+<span style="color: #a8fff1;"> Home or Farm Scale Wind Turbines:</span><br><br>
+    Wind turbines under 100 kilowatts cost roughly $3,000 to $8,000 per kilowatt of capacity. A 10 kilowatt machine (the size needed to power a large home) might have an installed cost of $50,000-$80,000 (or more).
+
+Wind turbines have significant economies of scale. Smaller farm or residential scale turbines cost less overall, but are more expensive per kilowatt of energy producing capacity. Oftentimes there are tax and other incentives that can dramatically reduce the cost of a wind project.<br><br>
+<span style="color: #a8fff1;"> Commercial Wind Turbines:</span><br><br>
+
+The costs for a utility scale wind turbine range from about $1.3 million to $2.2 million per MW of nameplate capacity installed. Most of the commercial-scale turbines installed today are 2 MW in size and cost roughly $3-$4 million installed. 
+
+Total costs for installing a commercial-scale wind turbine will vary significantly depending on the number of turbines ordered, cost of financing, when the turbine purchase agreement was executed, construction contracts, the location of the project, and other factors. Cost components for wind projects include things other than the turbines, such as wind resource assessment and site analysis expenses; construction expenses; permitting and interconnection studies; utility system upgrades, transformers, protection and metering equipment; insurance; operations, warranty, maintenance, and repair; legal and consultation fees. Other factors that will impact your project economics include taxes and incentives.
+
+</p>
+  
+ 
+<hr><br>
+
+<p>
+    <strong style="color: #aef2b1;">How efficient are Wind turbines?
+:<br><br></strong>
+     A wind turbine is typically 30-45% efficient – rising to 50% efficient at times of peak wind. If that sounds low to you, remember that if turbines were 100% efficient, the wind would completely drop after going through the turbine.
+
+Wind turbines in the UK are producing electricity 70-80% of the time, making them a reliable source of power throughout the year. 
+</p>
+
+</div>
+{% endblock content %}

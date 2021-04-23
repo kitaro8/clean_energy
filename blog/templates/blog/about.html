@@ -1,0 +1,43 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<style type="text/css">
+  html{
+  background-image: url("https://www.smartcitiesworld.net/AcuCustom/Sitename/DAM/014/green_energy_Adobe_rm.jpg");
+  position: relative;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+
+
+<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Clean Energy</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link active" href="{% url 'blog-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'blog-hydropower' %}">Hydropower</a>
+              <a class="nav-item nav-link" href="{% url 'blog-solar_power' %}">Solar Power</a>
+              <a class="nav-item nav-link" href="{% url 'blog-wind_power' %}">Wind Power</a>
+              <a class="nav-item nav-link" href="{% url 'blog-sources' %}">Sources</a>
+            </div>
+      </header>
+
+<div class="content" style="margin-top: 200px;">
+
+  <p>This website was created by students participating in the NextGen Coders Network (NGCN) program.</p>
+</div>
+
+
+{% endblock content %}

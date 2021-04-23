@@ -1,0 +1,63 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<style type="text/css">
+  html{
+  background-image: url("https://libraryeuroparl.files.wordpress.com/2016/06/eprs-ida-583810-promotion-renewable-energy-sources-in-eu.jpg");
+  position: relative;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Clean Energy</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'blog-hydropower' %}">Hydropower</a>
+              <a class="nav-item nav-link" href="{% url 'blog-solar_power' %}">Solar Power</a>
+              <a class="nav-item nav-link" href="{% url 'blog-wind_power' %}">Wind Power</a>
+              <a class="nav-item nav-link active" href="{% url 'blog-sources' %}">Sources</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<div class="content" style="margin-top: 200px;">
+
+
+      
+  <p>
+    <strong style="color: #FFE77AFF; font-size: 40px;">Sources</strong><hr><br>
+    <p>1- <a href="https://www.conserve-energy-future.com/pros-and-cons-of-hydroelectric-power.php#:~:text=Clean%20Energy%20Source,-As%20you%20may&text=The%20energy%20produced%20by%20hydroelectric,gases%20that%20pollute%20the%20atmosphere.&text=The%20hydroelectric%20plants%20emit%20fewer,%2C%20acid%20rains%2C%20and%20smog.">Conserve Energy Future</a></p> 
+    <p>2- <a href="https://www.renewablesfirst.co.uk/hydropower/hydropower-learning-centre/how-much-do-hydropower-systems-cost-to-build/">Renewables First</a></p>
+    <p>3- <a href="https://www.researchgate.net/publication/223872475_The_diversity_of_hydropower_projects">Egré, Dominique; Milewski, Joseph (2002). "The diversity of hydropower projects".</a></p>
+    <p>4- <a href="https://www.routledge.com/A-History-of-Engineering-in-Classical-and-Medieval-Times/Hill/p/book/9780415152914">Hill, Donald (2013). A History of Engineering in Classical and Medieval Times.</a></p>
+    <p>5- <a href="https://www.researchgate.net/publication/222637794_Hydropower_potential_and_development_activities">Bartle, Alison (2002). "Hydropower potential and development activities".</a></p>
+    <p>6- <a href="https://www.washingtonpost.com/business/economy/world-bank-turns-to-hydropower-to-square-development-with-climate-change/2013/05/08/b9d60332-b1bd-11e2-9a98-4be1688d7d84_story.html">Howard Schneider (8 May 2013). "World Bank turns to hydropower to square development with climate change".</a></p>
+    <p>7- <a href="https://iopscience.iop.org/article/10.1088/1755-1315/22/1/012020">Lewis, B J; Cimbala; Wouden (2014). "Major historical developments in the design of water wheels and Francis hydroturbines".</a></p>
+    <p>8- <a href="https://www.energy.gov/science-innovation/energy-sources/renewable-energy/solar">"Energy Sources: Solar". Department of Energy.</a></p>
+    <p>9- <a href="https://mercomindia.com/karnatakas-pavagada-solar-operational/">Ranjan, Rakesh (27 December 2019). "World's Largest Solar Park at Karnataka's Pavagada is Now Fully Operational".</a></p>
+    <p>10- <a href="  https://www.energy.gov/eere/solar/how-does-solar-work 
+  ">
+  Office of
+  ENERGY EFFICIENCY & RENEWABLE ENERGY</a></p>
+    <p>11- <a href="https://www.energysage.com/about-clean-energy/wind/pros-cons-wind-energy/
+  ">Energysage</a></p>
+    <p>12- <a href="https://www.windustry.org/how_much_do_wind_turbines_cost#:~:text=The%20costs%20for%20a%20utility,%243%2D%244%20million%20installed.">Windustry.org</a></p>
+  </p> 
+
+</div>
+{% endblock content %}
