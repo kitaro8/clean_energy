@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,61 +11,52 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-    {% if title %}
-        <title>{{ title }}</title>
-    {% else %}
-        <title>Clean Energy</title>
-    {% endif %}
+        <title>About</title>
 </head>
 <body>
-  {% block content %}
-    <header class="site-header">
+
+<style type="text/css">
+  html{
+  background-image: url("https://www.smartcitiesworld.net/AcuCustom/Sitename/DAM/014/green_energy_Adobe_rm.jpg");
+  position: relative;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+
+
+<header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Clean Energy</a>
+          <a class="navbar-brand mr-4" href="home.html">Clean Energy</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link active" href="{% url 'blog-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-              <a class="nav-item nav-link" href="{% url 'blog-hydropower' %}">Hydropower</a>
-              <a class="nav-item nav-link" href="{% url 'blog-solar_power' %}">Solar Power</a>
-              <a class="nav-item nav-link" href="{% url 'blog-wind_power' %}">Wind Power</a>
-              <a class="nav-item nav-link" href="{% url 'blog-sources' %}">Sources</a>
-            </div>
-            <!-- Navbar Right Side -->
-            <div class="navbar-nav">
-              {% if user.is_authenticated %}
-                <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
-                <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
-              {% else %}
-                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
-              {% endif %}
-              {% endblock %}
+              <a class="nav-item nav-link " href="home.html">Home</a>
+              <a class="nav-item nav-link active" href="about.html">About</a>
+              <a class="nav-item nav-link" href="hydropower.html">Hydropower</a>
+              <a class="nav-item nav-link" href="solar_power.html">Solar Power</a>
+              <a class="nav-item nav-link" href="wind_power.html">Wind Power</a>
+              <a class="nav-item nav-link" href="sources.html">Sources</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main role="main" class="container">
-      <div class="row">
-        <div class="col-md-8">
-          {% if messages %}
-            {% for message in messages %}
-              <div class="alert alert-{{ message.tags }}">
-                {{ message }}
-              </div>
-            {% endfor %}
-          {% endif %}
-          
-        </div>
-      </div>
-    </main>
+
+<div class="content" style="margin-top: 200px;">
+
+  <p>This website was created by students participating in the NextGen Coders Network (NGCN) program.</p>
+</div>
 
 <div class="footer">
   <p>NGCN 2021 Project-Team 6</p>
